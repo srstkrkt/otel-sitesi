@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)file:///C:/Users/srstk/OneDrive/Desktop/proje%20ana/otel.html7.html#reservation -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otel Web Sitesi</title>
+    <link rel="stylesheet" href="file:///C:/Users/srstk/OneDrive/Desktop/proje%20ana/styles.css">
+    <style>
+        /* Genel Stiller */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4b0082;
+            color: white;
+        }
+
+        header {
+            background: url('images/hero.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        header h1 {
+            font-size: 3em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        .btn {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        .btn:hover {
+            background-color: #cc5200;
+        }
+
+        /* Hizmetler ve Odalar Bölümü */
+        section {
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .service, .room {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .service img, .room img {
+            margin: 10px auto;
+            border-radius: 8px;
+            width: 80%;
+            max-width: 200px;
+        }
+
+        .service h3, .room h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        /* Fiyat Listesi */
+        #price-list {
+            margin: 60px auto;
+            max-width: 800px;
+        }
+
+        #price-list table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        #price-list th, #price-list td {
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 12px;
+        }
+
+        #price-list th {
+            background-color: #4b0082;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        #price-list td {
+            font-size: 1em;
+        }
+
+        /* Form */
+        form {
+            display: grid;
+            gap: 15px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        input[type="date"], input[type="number"] {
+            padding: 10px;
+            font-size: 1em;
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #cc5200;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <h1>Hayallerinizdeki Oteller</h1>
+            <p>Rahatlık, eğlence ve yenilik bir arada!</p>
+            <a href="file:///C:/Users/srstk/OneDrive/Desktop/proje%20ana/otel.html7.html#reservation" class="btn">Hemen Rezervasyon Yap</a>
+        </div>
+    </header>
+    
+    <main>
+        <!-- Hizmetler Bölümü -->
+        <section id="services">
+            <h2>Olanaklarımız</h2>
+            <div class="service">
+                <h3>Spa Ve Sauna Merkezi</h3>
+                <img src="./Otel Web Sitesi_files/akra-fethiye-spa-card.jpg" alt="Spa Merkezi">
+                <img src="./Otel Web Sitesi_files/sauna-682051_h1000.jpg" alt="">
+                <p>Günün yorgunluğunu atabileceğiniz profesyonel bir spa ve sauna deneyimi.</p>
+            </div>
+            <div class="service">
+                <h3>Spor Salonu</h3>
+                <img src="./Otel Web Sitesi_files/unnamed.jpg" alt="Spor Salonu">
+                <p>Moss Gym sponsorluğu ile son teknoloji ekipmanlarla donatılmış spor salonumuz sizi bekliyor.</p>
+            </div>
+            <div class="service">
+                <h3>Açık Hava ve Kapalı Sinema</h3>
+                <img src="./Otel Web Sitesi_files/istanbul-teras-sinema-etkinlikleri-biletino-blog-6566.jpg" alt="Sinema">
+                <img src="./Otel Web Sitesi_files/ETjdMXaXsAAhXmd.jpg" alt="">
+                <p>Görkemli filmleri izlemek için mükemmel bir ortam.</p>
+            </div>
+            <div class="service">
+                <h3>Bilgisayar ve Konsol Kafesi</h3>
+                <img src="./Otel Web Sitesi_files/34928398_xBfJZAdcyk6-KFBf91VxgV7TLTYuGBNqMyGxQq59qFw.jpg" alt="Oyun Kafesi">
+                <p>PlayStation ve Xbox kafemiz eğlence dolu anlar sunuyor.</p>
+            </div>
+            <div class="service">
+                <h3>Konferans Salonu</h3>
+                <img src="./Otel Web Sitesi_files/gallery250_96179.jpg" alt="Konferans Salonu">
+                <p>Toplantı ve etkinlikleriniz için geniş ve modern bir ortam.</p>
+            </div>
+            <div class="service">
+                 <h3>Eğlence Alanı</h3>
+                 <img src="./Otel Web Sitesi_files/images.jpg" alt="Eğlence Alanı">
+                 <p>Çocuklarınızın ve sizlerin eğlenebilmesi için şahane bir ortam</p>
+            </div>
+            <div class="service">
+                 <h3>Kumarhane</h3>
+                 <img src="./Otel Web Sitesi_files/dunyanin-en-luks-kumarhaneleri-the-cosmopolitan.jpg" alt="Kumarhane">
+                 <p>Türkiye'deki tek ve lüks kumarhane hizmeti sizlerle buluşuyor</p>
+            </div>
+            <div class="service">
+                 <h3>Kütüphane</h3>
+                 <img src="./Otel Web Sitesi_files/kutuphane.webp" alt="Kütüphane">
+                 <p>Kitaplarınızı okumak, derslerinizi çalışmak, sunum hazırlamak için sessiz ve rahat bir ortam </p>
+            </div>
+        </section>
+
+        <!-- Odalar Bölümü -->
+        <section id="rooms">
+            <h2>Odalarımız</h2>
+            <div class="room">
+                <h3>Lüks Oda</h3>
+                <img src="./Otel Web Sitesi_files/Caprice_otel_odası_modeli.jpg" alt="Lüks Oda">
+                <p>Modern dizayn ve konforun birleştiği odalarımız.</p>
+            </div>
+            <div class="room">
+                <h3>Aile Odası</h3>
+                <img src="./Otel Web Sitesi_files/aile oadsı.jpg" alt="Aile Odası">
+                <p>Ailece rahatça konaklayabileceğiniz geniş alanlar.</p>
+            </div>
+            <div class="room">
+                <h3>Deluxe Oda</h3>
+                <img src="./Otel Web Sitesi_files/download.jpg" alt="Deluxe Oda">
+                <p>Lüksün ve rahatlığın en üst noktası.</p>
+            </div>
+            <div class="room">
+                 <h3>Süit Oda</h3>
+                 <img src="./Otel Web Sitesi_files/süit oda.jpg" alt="Süit Oda">
+                 <p>Modern ve zarif dekorasyonuyla suit odamız, kral yatak, panoramik manzaralı balkon ve VIP hizmetlerle tatilinizin keyfini çıkarın.</p>
+            </div>
+                     
+        </section>
+            <!-- Önceden eklenmiş hizmetler burada -->
+        
+
+        <!-- Fiyat Listesi Bölümü -->
+        <section id="price-list">
+            <h2>Fiyat Listesi</h2>
+
+            <!-- Oda Fiyatları -->
+            <h3>Oda Paketleri</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Oda Tipi</th>
+                        <th>Açıklama</th>
+                        <th>Fiyat (Gecelik)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Standart Oda</td>
+                        <td>Çift kişilik yatak, tüm etkinlikler dahil</td>
+                        <td>₺3.500</td>
+                    </tr>
+                    <tr>
+                        <td>Deluxe Oda</td>
+                        <td>Kral yatak, balkon, tüm etkinlikler dahil</td>
+                        <td>₺5.000</td>
+                    </tr>
+                    <tr>
+                        <td>Aile Odası</td>
+                        <td>4 kişilik, geniş oturma alanı, tüm etkinlikler dahil</td>
+                        <td>₺7.500</td>
+                    </tr>
+                    <tr>
+                        <td>Suit Oda</td>
+                        <td>Lüks tasarım, jakuzili banyo, tüm etkinlikler dahil</td>
+                        <td>₺10.000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Spor Salonu Üyelik Fiyatları -->
+            <h3>Spor Salonu Üyelik Fiyatları (Otelde kalanlar için dahil değildir)</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Üyelik Süresi</th>
+                        <th>Açıklama</th>
+                        <th>Fiyat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 Ay</td>
+                        <td>Sınırsız kullanım</td>
+                        <td>₺3.000</td>
+                    </tr>
+                    <tr>
+                        <td>3 Ay</td>
+                        <td>Sınırsız kullanım</td>
+                        <td>₺6.720</td>
+                    </tr>
+                    <tr>
+                        <td>6 Ay</td>
+                        <td>Sınırsız kullanım</td>
+                        <td>₺11.760</td>
+                    </tr>
+                    <tr>
+                        <td>1 Yıl</td>
+                        <td>Sınırsız kullanım</td>
+                        <td>₺20.160</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Rezervasyon Formu -->
+        <section id="reservation">
+            <h2>Rezervasyon Yap</h2>
+            <form>
+                <label for="checkin">Giriş Tarihi:</label>
+                <input type="date" id="checkin" name="checkin">
+
+                <label for="checkout">Çıkış Tarihi:</label>
+                <input type="date" id="checkout" name="checkout">
+
+                <label for="guests">Kişi Sayısı:</label>
+                <input type="number" id="guests" name="guests" min="1">
+
+                <button type="submit">Rezervasyon Yap</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Serşat Korkut - Tüm Hakları Saklıdır.</p>
+    </footer>
+
+
+</body></html>
